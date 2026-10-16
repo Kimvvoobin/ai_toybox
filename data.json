@@ -1,0 +1,16 @@
+{
+  "openai": {
+    "apiKey": "",
+    "model": "gpt-4o-mini"
+  },
+  "tools": [
+    {"id":"meme","name":"AI 밈(Meme) 제조기","description":"찰떡같은 이미지와 웃긴 문구","symbol":"✦","meta":"01","accent":"yellow"},
+    {"id":"taro","name":"매운맛 타로/사주","description":"유쾌하고 어이없는 운세 챗봇","symbol":"Aa","meta":"02","accent":"blue"},
+    {"id":"dream","name":"개꿈 시각화 및 해몽기","description":"엉뚱하고 쓸데없이 진지한 해몽","symbol":"#","meta":"03","accent":"pink"},
+    {"id":"mbti","name":"과몰입 MBTI 판별기","description":"약간 이상한 MBTI 심리테스트","symbol":"≡","meta":"04","accent":"green"},
+    {"id":"beauty","name":"흑역사 미화 필터","description":"쓸데없이 고퀄리티인 프로필 사진","symbol":"↗","meta":"05","accent":"orange"},
+    {"id":"gura","name":"AI 핑계/변명 생성기","description":"세상에서 가장 기발하고 어이없는 변명","symbol":"☻","meta":"06","accent":"purple"},
+    {"id":"face","name":"조선시대 관상 및 직업 매칭기","description":"찰떡 비하인드 스토리와 관상 분석","symbol":"?","meta":"07","accent":"cyan"},
+    {"id":"speak","name":"극단적 말투 패치 AI","description":"원하는 콘셉트의 말투로 완벽 변환 ","symbol":"☀","meta":"08","accent":"red"}
+  ]
+}

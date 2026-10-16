@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GOOFY의 더 많은 AI 도구" />
+  <title>더 많은 도구 | GOOFY</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="app-shell more-page">
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="AI Toybox 홈">
+        <span class="brand-mark">?</span>
+        <span>GOOFY</span>
+      </a>
+      <nav class="topnav" aria-label="주요 메뉴">
+        <a class="active" href="../index.html#tools">Tools</a>
+        <a href="../index.html#recent">Recent</a>
+        <button class="about-menu-button" id="aboutButton" type="button">About</button>
+        <a href="../index.html" aria-label="홈으로 돌아가기">Home</a>
+      </nav>
+    </header>
+
+    <main class="more-page-main">
+      <div class="more-page-heading">
+        <div>
+          <p class="section-kicker">MORE / TOOLBOX</p>
+          <h1>더 많은<br /><em>딴짓 도구들.</em></h1>
+        </div>
+        <a class="back-link" href="../index.html#tools">돌아가기 <span>↖</span></a>
+      </div>
+
+      <section class="more-tool-grid" aria-label="추가 AI 도구 목록">
+        <article class="more-tool-card" style="--card-accent:#f3dc54">
+          <h2>오늘의 운세</h2>
+          <p>오늘 하루를 재미있는 한 문장으로 점쳐봐요.</p>
+          <span class="more-tool-meta">PLAY / 09</span>
+        </article>
+        <article class="more-tool-card" style="--card-accent:#b9d7ef">
+          <h2>변명 제조기</h2>
+          <p>곤란한 순간을 위한 그럴듯한 한마디를 만들어요.</p>
+          <span class="more-tool-meta">PLAY / 10</span>
+        </article>
+        <article class="more-tool-card" style="--card-accent:#f0b7c7">
+          <h2>닉네임 공방</h2>
+          <p>나만의 분위기를 담은 이름을 여러 개 추천받아요.</p>
+          <span class="more-tool-meta">PLAY / 11</span>
+        </article>
+        <article class="more-tool-card" style="--card-accent:#badb9c">
+          <h2>문장 온도계</h2>
+          <p>내 문장이 얼마나 따뜻하거나 차가운지 확인해요.</p>
+          <span class="more-tool-meta">THINK / 12</span>
+        </article>
+        <article class="more-tool-card" style="--card-accent:#f6bd83">
+          <h2>랜덤 질문</h2>
+          <p>대화를 시작하게 만드는 엉뚱한 질문을 던져요.</p>
+          <span class="more-tool-meta">THINK / 13</span>
+        </article>
+        <article class="more-tool-card" style="--card-accent:#d4b9e7">
+          <h2>편지 배달부</h2>
+          <p>고마운 사람에게 보낼 짧은 편지를 써봐요.</p>
+          <span class="more-tool-meta">WRITE / 14</span>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer"><span>AI TOYBOX</span><span></span><span>© 2026 9To9 Studio</span></footer>
+  </div>
+
+  <dialog class="about-dialog" id="aboutDialog" aria-labelledby="aboutTitle">
+    <div class="about-dialog-card">
+      <button class="dialog-close" id="closeAboutButton" type="button" aria-label="About 닫기">×</button>
+      <p class="section-kicker">ABOUT / 9TO9 STUDIO</p>
+      <h2 id="aboutTitle">가볍게 눌러보고,<br /><em>뜻밖의 결과를 만나요.</em></h2>
+      <p class="about-dialog-copy">AI TOYBOX는 뇌를 잠깐 쉬게 하고 싶은 사람들을 위한 작은 AI 도구 상자입니다. 쓸모와 장난 사이, 호기심이 가는 곳으로 마음껏 구경하고, 이용해보세요.</p>
+      <div class="about-dialog-meta"><span>MADE BY 9TO9 STUDIO</span><span>2026</span></div>
+    </div>
+  </dialog>
+
+  <script>
+    const aboutButton = document.querySelector('#aboutButton');
+    const aboutDialog = document.querySelector('#aboutDialog');
+    const closeAboutButton = document.querySelector('#closeAboutButton');
+    aboutButton.addEventListener('click', () => aboutDialog.showModal());
+    closeAboutButton.addEventListener('click', () => aboutDialog.close());
+    aboutDialog.addEventListener('click', (event) => {
+      if (event.target === aboutDialog) aboutDialog.close();
+    });
+  </script>
+</body>
+</html>
